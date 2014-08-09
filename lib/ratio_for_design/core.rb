@@ -33,22 +33,4 @@ module RatioForDesign
       value.is_a? Numeric
     end
   end
-
-  class GoldenRatio < Ratio
-    RATIO_VALUE = 1.6
-
-    def initialize(params)
-      self.ratio = RATIO_VALUE
-      super
-    end
-  end
-
-  class SilverRatio < Ratio
-    RATIO_VALUE = 1.4
-
-    def initialize(params)
-      self.ratio = RATIO_VALUE
-      super
-    end
-  end
 end

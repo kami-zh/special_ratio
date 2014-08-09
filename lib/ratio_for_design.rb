@@ -1,5 +1,6 @@
 require 'ratio_for_design/version'
-require 'ratio_for_design/ratio'
+require 'ratio_for_design/core'
+require 'ratio_for_design/ratios'
 
 module RatioForDesign
   def golden_ratio(params)
