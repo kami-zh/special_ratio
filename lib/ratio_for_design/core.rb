@@ -11,7 +11,7 @@ module RatioForDesign
 
       @value = @long || @short
 
-      raise ArgumentError, 'only numeric expected' unless numeric?(@value)
+      raise ArgumentError, 'only positive number expected' unless positive_number?(@value)
     end
 
     def answer
@@ -29,8 +29,8 @@ module RatioForDesign
       @long ? :long : :short
     end
 
-    def numeric?(value)
-      value.is_a? Numeric
+    def positive_number?(value)
+      (value.is_a? Numeric) && (value >= 0)
     end
   end
 end
