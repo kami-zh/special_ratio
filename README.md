@@ -1,6 +1,7 @@
 # RatioForDesign
 
 [![Build Status](https://travis-ci.org/kami30k/ratio_for_design.svg?branch=master)](https://travis-ci.org/kami30k/ratio_for_design)
+[![Gem Version](https://badge.fury.io/rb/ratio_for_design.svg)](http://badge.fury.io/rb/ratio_for_design)
 
 RatioForDesign is a utility for designer.
 Calculate value for designing by using some classic methods.
