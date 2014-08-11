@@ -33,7 +33,7 @@ These take parameters: `:long` or `:short`.
 
 ```ruby
 p golden_ratio(long: 100)  #=> 61.80469715698393
-p silver_ratio(short: 100) #=> 141.4
+p golden_ratio(short: 100) #=> 161.8
 ```
 
 Parameter `:long` and `:short` are as follow.
