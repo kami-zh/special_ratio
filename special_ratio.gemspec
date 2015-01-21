@@ -1,15 +1,15 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'math/mean_ratio/version'
+require 'special_ratio/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'math-mean_ratio'
-  spec.version       = Math::MeanRatio::VERSION
+  spec.name          = 'special_ratio'
+  spec.version       = SpecialRatio::VERSION
   spec.authors       = ['kami30k']
   spec.email         = ['kami30k@gmail.com']
   spec.summary       = %q{Calculate value for designing by using some classic methods. e.g. Golden Ratio, Silver Ratio.}
   spec.description   = spec.summary
-  spec.homepage      = 'https://github.com/kami30k/math-mean_ratio'
+  spec.homepage      = 'https://github.com/kami30k/special_ratio'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

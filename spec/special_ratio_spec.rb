@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Math::MeanRatio::Ratio do
+describe SpecialRatio::Ratio do
   describe 'GoldenRatio' do
     context 'pass :long' do
-      let(:value) { Math::MeanRatio::GoldenRatio.new(long: 100) }
+      let(:value) { SpecialRatio::GoldenRatio.new(long: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(100)
@@ -13,7 +13,7 @@ describe Math::MeanRatio::Ratio do
     end
 
     context 'pass :short' do
-      let(:value) { Math::MeanRatio::GoldenRatio.new(short: 100) }
+      let(:value) { SpecialRatio::GoldenRatio.new(short: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(162)
@@ -23,7 +23,7 @@ describe Math::MeanRatio::Ratio do
     end
 
     context 'pass :sum' do
-      let(:value) { Math::MeanRatio::GoldenRatio.new(sum: 100) }
+      let(:value) { SpecialRatio::GoldenRatio.new(sum: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(62)
@@ -35,7 +35,7 @@ describe Math::MeanRatio::Ratio do
 
   describe 'SilverRatio' do
     context 'pass :long' do
-      let(:value) { Math::MeanRatio::SilverRatio.new(long: 100) }
+      let(:value) { SpecialRatio::SilverRatio.new(long: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(100)
@@ -45,7 +45,7 @@ describe Math::MeanRatio::Ratio do
     end
 
     context 'pass :short' do
-      let(:value) { Math::MeanRatio::SilverRatio.new(short: 100) }
+      let(:value) { SpecialRatio::SilverRatio.new(short: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(141)
@@ -55,7 +55,7 @@ describe Math::MeanRatio::Ratio do
     end
 
     context 'pass :sum' do
-      let(:value) { Math::MeanRatio::SilverRatio.new(sum: 100) }
+      let(:value) { SpecialRatio::SilverRatio.new(sum: 100) }
 
       it 'should be calculated correctly' do
         expect(value.long.round).to  eq(59)
